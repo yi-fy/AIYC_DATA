@@ -1,5 +1,7 @@
 import requests
+import re
 from bs4 import BeautifulSoup
+from lxml import etree
 
 
 def download_content(url):
@@ -37,7 +39,7 @@ def parse(soup):
 
 def main():
     # 下载报考指南的网页
-    url = "https://zkaoy.com/sions/exam"
+    url = "https://www.jianshu.com/p/ff274cf20f39"
     filename = "tips1.html"
     result = download_content(url)
     save_to_file(filename, result)

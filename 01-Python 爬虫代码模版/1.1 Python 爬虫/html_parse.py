@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 def create_doc_from_filename(filename):
     with open(filename, "r", encoding='utf-8') as f:
         html_content = f.read()
-        doc = BeautifulSoup(html_content)
+        doc = BeautifulSoup(html_content, 'lxml')
     return doc
 
 

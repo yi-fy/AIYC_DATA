@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from lxml import etree
 
 
 def create_doc_from_filename(filename):
@@ -18,7 +19,7 @@ def parse(soup):
 
 
 def main():
-    filename = "tips1.html"
+    filename = "../../Spider_Test/活着-简书.html"
     soup = create_doc_from_filename(filename)
     parse(soup)
 

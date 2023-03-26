@@ -27,8 +27,8 @@ def save_to_file(filename, content):
 
 
 def main():
-    # 下载报考指南的网页
-    url = "https://zkaoy.com/sions/exam"
+    # 下载的网页
+    url = "https://www.jianshu.com/p/ff274cf20f39"
     result = download_content(url)
     save_to_file("tips1.html", result)
 
